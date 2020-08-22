@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Landing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">  
+      <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            /* background-color: #334768; */
+            font-family: helvetica;
+            
+        }
+
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            align-content: center;
+            background-image:linear-gradient(rgba(86, 46, 160, 0.5), rgba(70, 40, 150, 0.4)), url(img/photo-of-people-sitting-near-wooden-table-3182796.jpg);
+            /* background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/photo-of-people-sitting-near-wooden-table-3182796.jpg); */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container h1{
+            color: #fff;
+            font-size: 70px;
+            text-align: center;
+            padding: 50px 10px;
+            margin-bottom: 100px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        form input{
+            width: 300px;
+            padding: 10px 10px;
+            border-radius: 1px;
+            border: none;
+            outline: none;
+            background-color: #6a8fcc; 
+            box-shadow: 0 20px 20px rgba(0,0,0,0.20), 0 5px 6px rgba(0,0,0,0.19);
+        }
+
+
+        input[type=text]::placeholder, input[type=password]::placeholder{
+            color: #fff;
+            padding-left: 35px;
+            
+        }
+        input[type=text], input[type=password] {
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+
+        input[type=text]{
+            background-image: url(icons/user-solid.svg);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position: 5px 5px;
+        }
+
+
+        input[type=password]{
+            background-image: url(icons/lock-solid.svg);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position: 5px 5px;
+        }
+        input:focus{
+            outline: 2px solid #6a8fcc;
+            padding-left: 35px;
+            color: #fff;
+            
+        }
+
+        button{
+            background-color: #004bc3;
+            padding: 10px 70px;
+            color: #fff;
+            font-weight: 600;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            letter-spacing: 2px;
+
+        }
+
+        button:hover{
+            background-color: #022d72;
+            transition: all .5s ease-in-out;
+        }
+
+        @media only screen and (max-width: 600px) {
+
+            .container h1{
+                font-size: 50px;
+            }
+  
+            form input{
+    width: 200px;
+  }
+
+}
+
+i{
+    color: #fff;
+    font-size: 70px;
+}
+    </style>
+</head>
+<body>
+
+    <div><div class="container">
+    <form action="">
+        <h1>Online Banking</h1>
+        <input type="text" name="text" placeholder="Username"> <br>
+        <input type="password" name="password" placeholder="Password"> <br>
+        <button>Login</button>
+    </form>
+</div>
+    
+</body>
+</html>
